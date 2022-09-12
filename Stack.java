@@ -22,6 +22,15 @@ public class Stack<K> {
             this.head.setNext(tempNode);
         }
     }
+    public INode<K> peek() {
+        return head;
+        }
+
+    public INode<K> pop(){
+        INode<K> tempNode = this.head;
+        this.head = head.getNext();
+        return tempNode;
+    }
 
 
     public void printMyNode() {

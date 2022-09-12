@@ -11,5 +11,13 @@ public class StackMain {
         myStack.push(mySecondNode);
         myStack.push(myThirdNode);
         myStack.printMyNode();
+
+        myStack.pop();
+        System.out.println("peak : "+myStack.peek());
+        myStack.pop();
+        System.out.println("peak : "+myStack.peek());
+        myStack.pop();
+        System.out.println("peak : "+myStack.peek());
+
     }
 }
