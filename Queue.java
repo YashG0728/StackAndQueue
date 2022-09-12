@@ -1,16 +1,16 @@
 package UC1;
 
-public class Stack<K> {
+public class Queue<K> {
 
     public INode<K> head;
     public INode<K> tail;
 
-    public Stack() {
+    public Queue() {
         this.head = null;
         this.tail = null;
     }
 
-    public void push(INode<K> newNode) {
+    public void enQueue(INode<K> newNode) {
         if (this.tail == null) {
             this.tail = newNode;
         }
