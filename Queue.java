@@ -32,6 +32,17 @@ public class Queue<K> {
         return tempNode;
     }
 
+    public void dequeue() {
+        INode<K> prevNode = null, currentNode = head;
+        while (currentNode.getNext() != null) {
+            prevNode = currentNode;
+            currentNode = currentNode.getNext();
+        }
+        prevNode.setNext(null);
+        tail = prevNode;
+        System.out.println("Deleted : "+currentNode.getKey());
+    }
+
 
     public void printMyNode() {
         System.out.println("My Nodes : " + head);
